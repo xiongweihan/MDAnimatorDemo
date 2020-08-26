@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MDAnimatorDemo</string>
+    <string name="transitionName">图片过渡动画</string>
+    <string name="text_transitionName">文字过渡动画</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

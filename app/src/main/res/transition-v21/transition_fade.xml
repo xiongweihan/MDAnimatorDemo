@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    // fade(淡出)-->
+<!--    通过调整透明度在场景中增添或移除视图-->
+    <fade android:duration="1000" android:interpolator="@android:interpolator/accelerate_decelerate">
+        <targets>
+            <target android:excludeId="@android:id/statusBarBackground" />
+            <target android:excludeId="@android:id/navigationBarBackground" />
+        </targets>
+    </fade>
+</transitionSet>

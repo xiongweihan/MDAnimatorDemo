@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:id="@+id/rl_begin_change_layout"
+    tools:context=".transitionManager.BeginDelayedTransitionActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/begin_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_head_2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_image"
+        android:layout_marginTop="20dp"
+        android:text="本页是为了显示TransitionManager.beginDelayedTransition()方法来动画处理不同的试图属性"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_change_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_des"
+        android:layout_marginTop="30dp"
+        android:text="change SIZE"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_change_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_des"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/btn_change_size"
+        android:text="change position"
+        android:textAllCaps="false" />
+</RelativeLayout>

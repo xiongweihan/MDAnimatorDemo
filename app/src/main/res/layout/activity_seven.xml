@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SevenActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TransitionManager.go(); 方法进行view的动画过渡:"/>
+
+    <TextView
+        android:id="@+id/AutoTransition"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="AutoTransition"/>
+
+    <TextView
+        android:id="@+id/ChangeBounds"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="ChangeBounds"/>
+
+    <TextView
+        android:id="@+id/ChangeTransform"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="ChangeTransform"/>
+
+    <TextView
+        android:id="@+id/ChangeClipBounds"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="ChangeClipBounds"/>
+
+    <TextView
+        android:id="@+id/ChangeImageTransform"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="ChangeImageTransform"/>
+
+    <TextView
+        android:id="@+id/Fade"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Fade"/>
+
+    <TextView
+        android:id="@+id/Slide"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Slide"/>
+
+    <TextView
+        android:id="@+id/Explode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Explode"/>
+
+    <TextView
+        android:id="@+id/more_aninor"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="多个动画效果组合"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---------------------------------------------------------------------"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="beginDelayedTransition() 演示过渡动画:"/>
+    <TextView
+        android:id="@+id/tv_begin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="beginDelayedTransition()"/>
+</LinearLayout>

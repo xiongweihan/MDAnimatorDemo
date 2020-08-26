@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_head_1"
+        android:transitionName="@string/transitionName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_5"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/iv_5"
+        android:text="fragment2"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_msg_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="上面图片是两个fragment共享元素" />
+
+    <TextView
+        android:id="@+id/tv_overlap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_msg_1"
+        android:layout_marginTop="20dp"
+        android:text="Overlap"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_overlap"
+        android:layout_marginTop="10dp"
+        android:text="当为 true 时,这一页的退出 和 下一页的进入 动画 同时开始。 \n当为 false 时, 会等这一页的退出动画完成，才开始前一页的进入动画。" />
+
+</RelativeLayout>

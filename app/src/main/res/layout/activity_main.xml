@@ -1,18 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="ActivityOptionsCompat.makeCustomAnimation"/>
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/icon_head_1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="makeScaleUpAnimation"/>
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/icon_head_1" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="makeThumbnailScaleUpAnimation"/>
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/icon_head_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="makeClipRevealAnimation"/>
+
+        <ImageView
+            android:id="@+id/iv_4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/icon_head_1"
+            android:transitionName="@string/transitionName" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="共享元素动画makeSceneTransitionAnimation(图片是单个，下面文字是多个view联动)"/>
+        <ImageView
+            android:id="@+id/iv_5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/icon_head_1"
+            android:transitionName="@string/transitionName" />
+
+        <TextView
+            android:id="@+id/tv_v5_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="这个文字是和上边图片一起的，为了实现多view联动，点击文字可看效果"
+            android:transitionName="@string/text_transitionName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="这图片是为了看activity过渡动画效果的"/>
+        <ImageView
+            android:id="@+id/iv_6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/icon_head_1"
+            android:transitionName="@string/transitionName" />
+
+
+        <Button
+            android:id="@+id/btn_sence_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Scene Transition(场景过渡动画)"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

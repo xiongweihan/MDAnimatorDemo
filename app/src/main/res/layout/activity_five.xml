@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiveActivity">
+
+
+    <TextView
+        android:id="@+id/tv_v5_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="这个文字是和上边图片一起的，为了实现多view联动，点击文字可看效果"
+        android:transitionName="@string/text_transitionName" />
+    <TextView
+        android:id="@+id/tv_v5_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="并且这个页面的所有入场和退场动画都不一样，在代码里专门做了不同的动画设置"
+        android:transitionName="@string/text_transitionName" />
+
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

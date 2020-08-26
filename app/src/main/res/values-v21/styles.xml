@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+
+        <!--下面的内容要在5.0上才好用,启用转换过程都会更加流畅自然,指定进入和退出的动画可以重叠 -->
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+
+<!--        <item name="android:windowEnterTransition">@transition/transition_explode</item>-->
+<!--        <item name="android:windowExitTransition">@transition/transition_explode</item>-->
+<!--        <item name="android:windowReturnTransition">@transition/transition_slide</item>-->
+<!--        <item name="android:windowReenterTransition">@transition/transition_slide</item>-->
+
+    </style>
+
+    <!-- 继承AppTheme，因为里面定义了android:windowContentTransitions属性，允许我们使用ActivityOptions -->
+    <style name="SecondTheme" parent="AppTheme">
+        <!-- 进场（Activity进入时）动画 -->
+        <item name="android:windowEnterTransition">@transition/transition_slide</item>
+        <!-- 出场（Activity退出时）动画，其实是错误的，下面会改正 -->
+        <item name="android:windowReturnTransition">@transition/transition_slide</item>
+    </style>
+
+
+    <style name="AppTheme.WindowTransition" parent="AppTheme">
+        <!-- 指定进入和退出transitions,注意只对makeSceneTransitionAnimation -->
+        <item name="android:windowEnterTransition">@transition/transition_explode</item>
+        <item name="android:windowExitTransition">@transition/transition_explode</item>
+    </style>
+
+</resources>
